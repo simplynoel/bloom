@@ -1,0 +1,41 @@
+@use "@/styles/index" as *;
+
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100dvw;
+    height: 100dvh;
+
+    gap: 2rem;
+    
+    &.dark {
+        background-color: $background-color-dark;
+        > h1 {
+            color: $text-color-dark;
+        }
+    }   
+
+    &.light {
+        background-color: $background-color-light;
+        > h1 {
+            color: $text-color-light;
+        }
+    }
+
+    > h1 {
+        color: $text-color-light;
+        font-size: $text-xxl;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    > p {
+        color: $text-color-light;
+        font-size: $text-md;
+        text-align: center;
+        max-width: 600px;
+    }
+}
